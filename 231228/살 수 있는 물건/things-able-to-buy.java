@@ -3,11 +3,11 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         java.util.Scanner sc = new java.util.Scanner(System.in);
         int a = sc.nextInt();
-        if(a==3000){
+        if(a>=3000){
             System.out.println("book");
-        }else if(a==1000){
+        }else if(a>=1000&&a<3000){
             System.out.println("mask");
-        }else if(a==0){
+        }else{
             System.out.println("no");
         }
 
