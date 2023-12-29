@@ -6,12 +6,12 @@ public class Main {
         int b = a%2;
         if(b == 0){
             a /= 2;
-            
             b = a%2;
-        if(b == 1){
-            a = (a+1)/2;
-            System.out.println(a);
-        }else{System.out.println(a);}
+            if(b == 1){
+                a = (a+1)/2;
+                System.out.println(a);
+            }else{
+                System.out.println(a);}
         }
         
     }
