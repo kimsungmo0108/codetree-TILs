@@ -13,7 +13,7 @@ public class Main {
             }else{
                 System.out.println(a);}
         }else{
-                System.out.println((a+1))/2;}
+                System.out.println((a+1)/2);}
         
     }
 }
