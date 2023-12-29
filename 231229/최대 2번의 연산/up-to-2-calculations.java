@@ -12,7 +12,8 @@ public class Main {
                 System.out.println(a);
             }else{
                 System.out.println(a);}
-        }
+        }else{
+                System.out.println(a);}
         
     }
 }
