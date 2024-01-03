@@ -7,13 +7,11 @@ public class Main {
         int b1 = sc.nextInt();
         String b2 = sc.next();
         if (a1 >= 19 || b1 >= 19) {
-            if (a2.equals("M") || b2.equals("M")) {
+            if (a2.equals("M") && a1>=19) {
                 System.out.println("1");
-            } else {
-                System.out.println("0");
-            }
-        } else {
-            System.out.println("0");
-        }
-    }
+            }else if(b2.equals("M") && b1>=19) {
+                System.out.println("1");
+            }else {System.out.println("0");}
+        }else {System.out.println("0");}
+    }   
 }
