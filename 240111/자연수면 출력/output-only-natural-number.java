@@ -4,7 +4,7 @@ public class Main {
         java.util.Scanner sc = new java.util.Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        if(a>=0){
+        if(a>0){
             for(int i = 0;i<b;i++){
                 System.out.printf("%d",a);
             }
