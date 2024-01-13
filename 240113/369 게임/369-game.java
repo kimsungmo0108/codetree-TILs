@@ -6,6 +6,8 @@ public class Main {
         for(int i = 1; i<=n ; i++){
             if(i%10 == 3 || i%10 == 6 || i%10 == 9){
                 System.out.printf("%d ", 0);
+            }else if(i%3 == 0){
+                System.out.printf("%d ", 0);
             }else {System.out.printf("%d ", i);}
         }
     }
