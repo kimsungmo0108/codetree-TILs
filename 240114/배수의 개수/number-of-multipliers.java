@@ -12,7 +12,8 @@ public class Main {
         for(int i = 0; i<10; i++){
             if(nums[i]%3 == 0){
                 c1++;
-            }else if(nums[i]%5 == 0){
+            }
+            if(nums[i]%5 == 0){
                 c2++;
             }
         }
