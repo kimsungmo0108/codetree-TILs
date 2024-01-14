@@ -16,6 +16,6 @@ public class Main {
                 c2++;
             }
         }
-        System.out.printf("%d %d", c1, c1);
+        System.out.printf("%d %d", c1, c2);
     }
 }
