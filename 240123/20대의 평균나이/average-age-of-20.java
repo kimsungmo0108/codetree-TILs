@@ -7,10 +7,8 @@ public class Main {
         int c = 0;
         while(true){
             age = sc.nextInt();
-            if(age >= 30){
+            if(age >= 30 || age<20){
                 break;
-            }else if(age<20){
-                continue;
             }else{
                 total += age;
                 c++;
