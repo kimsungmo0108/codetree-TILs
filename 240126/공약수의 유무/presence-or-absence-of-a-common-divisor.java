@@ -6,7 +6,7 @@ public class Main {
         int b = sc.nextInt();
         int c = 0;
         for(; a<=b; a++){
-            if(1920%a==0 || 2880%a==0){
+            if(1920%a==0 && 2880%a==0){
                 c++;
             }
         }
