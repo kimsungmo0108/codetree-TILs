@@ -7,14 +7,14 @@ public class Main {
         int c = sc.nextInt();
         int d = 0;
         for(; a<=b; a++){
-            if(c%a==0){
+            if(a%c==0){
                 d++;
             }
         }
         if(d>0){
-            System.out.println("YES");
-        }else{
             System.out.println("NO");
+        }else{
+            System.out.println("YES");
         }
     }
 }
