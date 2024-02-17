@@ -11,6 +11,9 @@ public class Main {
             for(int j=i; j<=n; j++){
                 c++;
                 System.out.printf("%s ",(char)(64+c));
+                if(c>25){
+                    c=0;
+                }
             }
             System.out.println();
         }
