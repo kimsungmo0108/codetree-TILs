@@ -8,12 +8,10 @@ public class Main {
         int c = 0;
         for(int i=a; i<=b; i++){
             for(int j=1; j<=i; j++){
-                if(sum>=i*2){
-                    if(sum-i == i){
-                        c++;
-                    }
-                    sum = 0;
+                if(sum-i == i){
+                    c++;
                 }
+                sum = 0;
                 if(i%j == 0){
                     sum += j;
                 }
