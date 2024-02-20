@@ -3,10 +3,10 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         java.util.Scanner sc = new java.util.Scanner(System.in);
         int n = sc.nextInt();
-        float sum = 0;
-        float avg = 0;
+        double sum = 0;
+        double avg = 0;
         for(int i=0; i<n; i++){
-            sum += sc.nextFloat();
+            sum += sc.nextDouble();
         }
         avg = sum/n;
         System.out.printf("%.1f\n", avg);
