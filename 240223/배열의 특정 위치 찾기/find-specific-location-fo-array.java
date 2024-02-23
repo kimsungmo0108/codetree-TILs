@@ -12,7 +12,8 @@ public class Main {
         for(int j=0; j<10; j++){
             if((j+1)%2 == 0){
                 sum1 += nums[j];
-            }else if((j+1)%3 == 0){
+            }
+            if((j+1)%3 == 0){
                 sum2 += nums[j];
                 c++;
             }
