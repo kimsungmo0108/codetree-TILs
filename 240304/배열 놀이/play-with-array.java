@@ -22,7 +22,9 @@ public class Main {
                     if(a==nums[k]){
                         System.out.println(k+1);
                         break;
-                    }
+                    }else if(k==(n-1)){
+                        System.out.println(0);
+                        }
                 }
             }else if(c==3){
                 a = sc.nextInt();
@@ -30,6 +32,7 @@ public class Main {
                 for(int k=a-1; k<b; k++){
                     System.out.printf("%d ", nums[k]);
                 }
+                System.out.println();
             }
         }
     }
