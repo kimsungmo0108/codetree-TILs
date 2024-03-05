@@ -21,7 +21,7 @@ public class Main {
                 }
             }
         }
-        if(count >= b){
+        if(count-1 >= b){
             System.out.println("Yes");
         }else{
             System.out.println("No");
