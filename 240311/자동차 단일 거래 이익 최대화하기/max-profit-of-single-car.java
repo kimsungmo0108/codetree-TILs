@@ -1,35 +1,32 @@
+import java.util.Scanner;
+
 public class Main {
+    public static final int MAX_NUM = 1000;
+
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
-        java.util.Scanner sc = new java.util.Scanner(System.in);
-        int n = sc.nextInt();
-        int[] nums = new int[n];
-        int min = 2147483647;
-        int max = -2147483647;
-        int index = -1;
-        for(int i=0; i<n; i++){
-            nums[i] = sc.nextInt();
-        }
+        Scanner sc = new Scanner(System.in);
 
-        for(int i=0; i<n; i++){
-            if(min>nums[i]){
-                min = nums[i];
-                index = i;
+        // 변수 선언:
+        int n;
+        int[] price = new int[MAX_NUM];
+
+        // 입력:
+        n = sc.nextInt();
+        for(int i = 0; i < n; i++)
+            price[i] = sc.nextInt();
+
+        // 배열을 앞에서부터 순회하며 사는 시점의 후보를 선택합니다
+        int maxProfit = 0;
+        for(int i = 0; i < n; i++) {
+            // 사는 시점의 다음 해부터 순회하며 파는 시점의 후보를 선택합니다
+            for(int j = i + 1; j < n; j++) {
+                int profit = price[j] - price[i];
+                
+                if(profit > maxProfit)
+                    maxProfit = profit;
             }
         }
-        if(index>=0){
-        for(int i=index;i<n;i++){
-            if(max<nums[i]){
-                max = nums[i];
-            }
-        }}
 
-        if(n==1){
-            System.out.println(0);
-        }else if((min-max)<=0){
-            System.out.printf("%d\n", max-min);
-        }else{
-            System.out.println(0);
-        }
+        System.out.print(maxProfit);
     }
 }
