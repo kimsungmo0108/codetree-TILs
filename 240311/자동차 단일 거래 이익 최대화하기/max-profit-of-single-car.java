@@ -17,7 +17,7 @@ public class Main {
                 index = i;
             }
         }
-        if(index>0){
+        if(index>=0){
         for(int i=index;i<n;i++){
             if(max<nums[i]){
                 max = nums[i];
