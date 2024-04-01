@@ -3,6 +3,7 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         java.util.Scanner sc = new java.util.Scanner(System.in);
         String[] str = new String[10];
+        int c = 0;
         for(int i=0; i<10; i++){
             str[i] = sc.next();
         }
@@ -12,7 +13,11 @@ public class Main {
             len = str[i].length()-1;
             if(str[i].charAt(len) == a){
                 System.out.println(str[i]);
+                c++;
             }
+        }
+        if(c==0){
+            System.out.println("None");
         }
     }
 }
