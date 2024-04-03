@@ -1,35 +1,37 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // 여기에 코드를 작성해주세요.
-        java.util.Scanner sc = new java.util.Scanner(System.in);
-        String str = sc.next();
-        int count = 0;
-        char c = str.charAt(0);
-        int[] len = new int[str.length()];
-        char[] ch = new char[str.length()];
+        Scanner sc = new Scanner(System.in);
 
-        for(int i=0; i<str.length(); i++){
-            if(str.charAt(i) == c){
-                count++;
-                if(i==str.length()-1){
-                    len[i] = count;
-                    ch[i] = c;
-                }
-            }else if(str.charAt(i) != c){
-                len[i-1] = count;
-                ch[i-1] = c;
-                count=1;
-                c=str.charAt(i);
+        String A = sc.next();
+
+        // 변환
+        String encoded = "";
+
+        // 입력의 첫번째 값을 읽고 초기화합니다.
+        char currChar = A.charAt(0);
+        int numChar = 1;
+        for(int i = 1; i < A.length(); i++){
+            if(A.charAt(i) == currChar){
+                // 지금까지의 문자와 같으면 연속된 문자 개수만 추가해 주고 넘어갑니다.
+                numChar++;
+            }
+            else {
+                // 지금까지의 문자와 다르면 새로운 문자로 바꿔줘야 합니다.
+                // 지금까지 세어온 currChar와 numChar를 기록합니다.
+                encoded += currChar;
+                encoded += Integer.toString(numChar);
+                // currChar와 numChar를 현재 값으로 초기화합니다.
+                currChar = A.charAt(i);
+                numChar = 1;
             }
         }
-        String abc = new String();
-        for(int i=0; i<str.length(); i++){
-            if(len[i] == 0){
-                continue;
-            }
-            abc += ch[i];
-            abc += len[i];
-        }
-        System.out.printf("%d\n%s", abc.length(), abc);
+        // 마지막 덩어리에 해당하는 currChar와 numChar를 기록합니다.
+        encoded += currChar;
+        encoded += Integer.toString(numChar);
+
+        System.out.println(encoded.length());
+        System.out.println(encoded);
     }
 }
