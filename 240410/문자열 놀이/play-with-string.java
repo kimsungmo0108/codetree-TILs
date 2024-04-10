@@ -19,7 +19,7 @@ public class Main {
                         str2 += str.charAt(a-1);
                         System.out.print(str.charAt(a-1));
                     }else{
-                        str2 += str.charAt(i);
+                        str2 += str.charAt(j);
                         System.out.print(str.charAt(j));
                     }
                 }
