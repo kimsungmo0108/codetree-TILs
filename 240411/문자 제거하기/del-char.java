@@ -11,11 +11,13 @@ public class Main {
             if(str.length() == 1){
                 break;
             }
-            if(index[i]>str.length()){
-                continue;
+            if(index[i]>=str.length()){
+                str = str.substring(0, str.length()-1);
+                System.out.println(str);
+            }else{
+                str = str.substring(0, index[i]) + str.substring(index[i]+1);
+                System.out.println(str);
             }
-            str = str.substring(0, index[i]) + str.substring(index[i]+1);
-            System.out.println(str);
             if(str.length() == 2){
                 str = str.substring(0, 1);
                 System.out.println(str);
