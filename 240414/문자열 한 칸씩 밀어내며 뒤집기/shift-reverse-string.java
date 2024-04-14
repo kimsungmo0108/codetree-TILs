@@ -4,19 +4,21 @@ public class Main {
         java.util.Scanner sc = new java.util.Scanner(System.in);
         String str = sc.next();
         int n = sc.nextInt();
-        int[] num = new int[n];
+        // int[] num = new int[n];
+        int num = 0;
         String str2 = new String();
+        // for(int i=0; i<n; i++){
+        //     num[i] = sc.nextInt();
+        // }
         for(int i=0; i<n; i++){
-            num[i] = sc.nextInt();
-        }
-        for(int i=0; i<n; i++){
-           if(num[i] == 1){
+            num = sc.nextInt();
+           if(num == 1){
                 str = str.substring(1, str.length()) + str.substring(0, 1);
                 System.out.println(str);
-            }else if(num[i] == 2){
+            }else if(num == 2){
                 str = str.substring(str.length()-1) + str.substring(0, str.length()-1);
                 System.out.println(str);
-            }else if(num[i] == 3){
+            }else if(num == 3){
                 for(int j = str.length()-1; j>=0; j--){
                     str2 += String.valueOf(str.charAt(j));
                 }
