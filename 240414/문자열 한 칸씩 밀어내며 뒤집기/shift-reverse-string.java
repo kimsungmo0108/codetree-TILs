@@ -5,7 +5,6 @@ public class Main {
         String str = sc.next();
         int n = sc.nextInt();
         int[] num = new int[n];
-        int len = str.length();
         String str2 = new String();
         for(int i=0; i<n; i++){
             num[i] = sc.nextInt();
