@@ -11,7 +11,9 @@ public class Main {
             num[i] = sc.nextInt();
         }
         for(int i=0; i<n; i++){
-            if(num[i] == 1){
+            if(str.length() == 1){
+                System.out.println(str);
+            }else if(num[i] == 1){
                 str = str.substring(1, str.length()) + str.substring(0, 1);
                 System.out.println(str);
             }else if(num[i] == 2){
