@@ -8,7 +8,7 @@ public class Main {
                 System.out.print((char)(str.charAt(i)-'A'+'a'));
             }else if('a' <= str.charAt(i) && str.charAt(i) <= 'z') {
                 System.out.print(str.charAt(i));
-            }else if('1' <= str.charAt(i) && str.charAt(i) <= '9'){
+            }else if('0' <= str.charAt(i) && str.charAt(i) <= '9'){
                 System.out.print(str.charAt(i));
             }else{
                 continue;
