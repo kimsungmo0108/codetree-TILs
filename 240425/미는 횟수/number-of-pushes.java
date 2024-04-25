@@ -20,6 +20,8 @@ public class Main {
         }
         if(count >= c.length){
             System.out.println(-1);
+        }else if(count == 0){
+            System.out.println(c.length);
         }else{
             System.out.println(count);
         }
