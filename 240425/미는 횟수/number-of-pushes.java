@@ -12,10 +12,10 @@ public class Main {
             }
             c = str1.toCharArray();
             str1 = "";
-            for(int i = 1; i < c.length; i++){
+            str1 += String.valueOf(c[c.length-1]);
+            for(int i = 0; i < c.length-1; i++){
                 str1 += String.valueOf(c[i]);
             }
-            str1 += String.valueOf(c[0]);
             count++;
         }
         if(count >= c.length){
