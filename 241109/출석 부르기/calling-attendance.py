@@ -7,4 +7,4 @@ elif a == 2:
 elif a == 3:
    print("Paul")
 else:
-    print("Vacanvy");
+    print("Vacancy");
