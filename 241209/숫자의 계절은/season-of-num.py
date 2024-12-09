@@ -6,5 +6,5 @@ elif 6 <= a and a <= 8:
     print('Summer');
 elif 9 <= a and a <= 11:
     print('Fall');
-elif 2 <= a and a <= 12:
+elif 1 == a or 2 == a or 12 == a:
     print('Winter');
